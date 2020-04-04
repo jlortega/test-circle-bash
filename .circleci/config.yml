@@ -17,7 +17,7 @@ jobs:
             set +e
             nvm install 12.10.0
       - run: chmod +x ./scripts/script.sh
-      - run: .scripts/script.sh
+      - run: ./scripts/script.sh
 workflows:
   welcome:
     jobs:
