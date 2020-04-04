@@ -5,6 +5,8 @@ jobs:
   test:
     docker:
       - image: circleci/android:api-28-node
+    environment:
+      BASH_ENV: "~/.nvm/nvm.sh"
     steps:
       - checkout
       - run: chmod +x script.sh
